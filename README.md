@@ -97,19 +97,19 @@ Estas instruções assumem um sistema operacional Linux/macOS. Os comandos podem
 
 ### 3. Running the Scripts / Execução dos Scripts
 
-1.  **Run the Message Producer:** Open a new terminal window, navigate to your project directory, and run the Python producer script:
-    **Execute o Produtor de Mensagens:** Abra uma nova janela do terminal, navegue até o diretório do seu projeto e execute o script do produtor Python:
-    ```bash
-    python producer.py
-    ```
-
-2.  **Run the Consumer with PySpark:** Open a new terminal window, navigate to your project directory, and run the PySpark consumer script, including the Kafka connector:
+1.  **Run the Consumer with PySpark:** Open a new terminal window, navigate to your project directory, and run the PySpark consumer script, including the Kafka connector:
     **Execute o Consumidor com PySpark:** Abra uma nova janela do terminal, navegue até o diretório do seu projeto e execute o script do consumidor PySpark, incluindo o conector Kafka:
     ```bash
     spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.5 consumer.py
     ```
     *(Ensure the Spark version matches yours)*
     *(Certifique-se de que a versão do Spark corresponda à sua)*
+
+2.  **Run the Message Producer:** Open a new terminal window, navigate to your project directory, and run the Python producer script:
+    **Execute o Produtor de Mensagens:** Abra uma nova janela do terminal, navegue até o diretório do seu projeto e execute o script do produtor Python:
+    ```bash
+    python producer.py
+    ```
 
 ### 4. Stopping the Processes / Interrompendo os Processos
 
